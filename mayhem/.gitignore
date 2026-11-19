@@ -1,0 +1,3 @@
+# out-of-tree BLIS builds made by mayhem/build.sh (removed by git clean -ffdX)
+/out-fuzz/
+/out-test/

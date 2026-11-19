@@ -1,0 +1,9 @@
+project: savantenvs/blis
+target: fuzz_blis_typed
+cmds:
+  - cmd: /mayhem/fuzz_blis_typed
+    libfuzzer: true
+    timeout: 5
+# upstream ships a root testsuite/ (BLIS's own test driver), so name the seed source explicitly
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar

@@ -1,0 +1,10 @@
+# .dockerignore for the commit-image build: the FULL repo (incl. .git) goes in; only local build
+# artifacts are dropped. NOTE: upstream's tracked build/ directory holds configure inputs — keep it.
+mayhem/out-fuzz/
+mayhem/out-test/
+*.o
+*.a
+*.so
+.DS_Store
+*.swp
+*~

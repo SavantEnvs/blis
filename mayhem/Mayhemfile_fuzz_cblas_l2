@@ -1,0 +1,9 @@
+project: savantenvs/blis
+target: fuzz_cblas_l2
+cmds:
+  - cmd: /mayhem/fuzz_cblas_l2
+    libfuzzer: true
+    timeout: 5
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_cblas_l2/testsuite
